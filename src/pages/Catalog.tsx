@@ -3,6 +3,7 @@ import { motorcycles } from '@/data/motorcycles';
 import MotorcycleCard from '@/components/MotorcycleCard';
 import Filters from '@/components/Filters';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const Catalog = () => {
   const [filters, setFilters] = useState({
@@ -61,6 +62,8 @@ const Catalog = () => {
           </main>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

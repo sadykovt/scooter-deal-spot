@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 import Index from "./pages/Index";
 import Catalog from "./pages/Catalog";
 import MotorcycleDetail from "./pages/MotorcycleDetail";
+import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/motorcycle/:id" element={<MotorcycleDetail />} />
+              <Route path="/contacts" element={<Contacts />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

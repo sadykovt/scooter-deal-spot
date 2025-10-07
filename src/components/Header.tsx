@@ -28,6 +28,9 @@ const Header = () => {
           <Link to="/catalog" className="text-sm font-medium hover:text-primary transition-colors">
             {t('catalog')}
           </Link>
+          <Link to="/contacts" className="text-sm font-medium hover:text-primary transition-colors">
+            {language === 'ru' ? 'Контакты' : 'Kontaktlar'}
+          </Link>
         </nav>
 
         <div className="flex items-center space-x-4">

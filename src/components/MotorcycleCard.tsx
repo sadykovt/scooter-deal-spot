@@ -41,22 +41,22 @@ const MotorcycleCard = ({ motorcycle }: MotorcycleCardProps) => {
           </div>
         </CardContent>
 
-        <CardFooter className="p-4 pt-0 flex gap-2">
+        <CardFooter className="p-4 pt-0 flex flex-col gap-2">
           <Button
             variant="default"
             size="sm"
-            className="flex-1"
+            className="w-full"
             asChild
           >
-            <a href="tel:+998901234567" className="flex items-center justify-center space-x-2">
-              <Phone className="h-4 w-4" />
-              <span>{t('call')}</span>
+            <a href="tel:+998901234567">
+              <Phone className="h-4 w-4 mr-2" />
+              {t('call')}
             </a>
           </Button>
           <Button
             variant="outline"
             size="sm"
-            className="flex-1"
+            className="w-full"
             onClick={() => setIsModalOpen(true)}
           >
             {t('leaveRequest')}
